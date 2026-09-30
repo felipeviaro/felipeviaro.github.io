@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+  <head>
+    <title>QA Felipe Viaro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .photo-grid {
+        column-count: 2;
+        column-gap: 12px;
+      }
+      .photo-grid img {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+      
+      p {
+        color: #adacac;
+      }
+      
+      .intro {
+        color: #dbdbdb;
+        font-size: 17px;
+        line-height: 1.5;
+        text-align: left;
+      }
+      .skill-label {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+.skill-bar {
+  max-width: 80%;
+  height: 28px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.skill-bar > div {
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .skill-bar {
+    max-width: 100%;
+  }
+}
+      @media only screen and (max-width: 600px) {
+        .photo-grid {
+          column-count: 1;
+        }
+      }
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {
+        width: 120px;
+        background: #222;
+      }
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {
+        margin-left: 120px;
+      }
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {
+        #main {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <img src="IMG-20240701-WA0080.jpg" style="width: 100%" />
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <!--
+      <a
+        href="#photos"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>PHOTOS</p>
+      -->
+      </a>
+      <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <i class="fa fa-briefcase w3-xxlarge"></i>
+  <p>EXPERIENCE</p>
+</a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="w3-flex w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a href="#" class="w3-button" style="flex: 1">HOME</a>
+        <a href="#about" class="w3-button" style="flex: 1">ABOUT</a>
+        <a href="#experience" class="w3-button" style="flex: 1">EXPERIENCE</a>
+        <!--<a href="#photos" class="w3-button" style="flex: 1">PHOTOS</a>-->
+        <a href="#contact" class="w3-button" style="flex: 1">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">I'm</span> Felipe Viaro.
+        </h1>
+        <p class="w3-large">QA Engineer.</p>
+        <img
+          src="IMG-20240701-WA0080.jpg"
+          alt="Felipe Viaro"
+          class="w3-image"
+          width="500"
+          height="1108"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Felipe Viaro</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p class="w3-large">
+          I'm a QA Engineer with hands-on experience in manual testing of web
+          platforms in Agile/Scrum teams, from requirement analysis and test
+          case creation to bug reporting, regression and API testing. Before QA,
+          I spent 15 years in design as a researcher, professor and freelancer,
+          which gives me a user-centered eye for detail. I'm now joining FoxYou
+          and growing into test automation with JavaScript.
+        </p>
+       <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+       
+
+<p class="w3-monospace skill-label">Static testing / Documentation analysis</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 90%"></div>
+</div>
+
+<p class="w3-monospace skill-label">Functional testing / Regression, smoke, exploratory testing</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 95%"></div>
+</div>
+
+<p class="w3-monospace skill-label">Test case creation, execution, maintenance</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 95%"></div>
+</div>
+
+<p class="w3-monospace skill-label">Bug reporting and investigation</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 95%"></div>
+</div>
+
+<p class="w3-monospace skill-label">API / SQL testing</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 80%"></div>
+</div>
+
+<p class="w3-monospace skill-label">Testing automation skills / Playwright, JavaScript, CI/CD, Git/GitHub</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 50%"></div>
+</div>
+
+<p class="w3-monospace skill-label">Team collaboration</p>
+<div class="w3-dark-grey skill-bar">
+  <div class="w3-olive" style="width: 95%"></div>
+</div>
+<br />
+<!--
+        <div
+          class="w3-grid w3-center w3-padding-16 w3-section w3-light-grey"
+          style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))"
+        >
+          <div class="w3-section">
+            <span class="w3-xlarge">11+</span><br />
+            Partners
+          </div>
+          <div class="w3-section">
+            <span class="w3-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="w3-section">
+            <span class="w3-xlarge">89+</span><br />
+            Happy Clients
+          </div>
+          <div class="w3-section">
+            <span class="w3-xlarge">150+</span><br />
+            Meetings
+          </div>
+        </div>
+
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      
+        
+        !-- Pricing tables --
+        <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+        <div
+          class="w3-grid"
+          style="
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+          "
+        >
+          <div>
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+              <li class="w3-padding-16">Web Design</li>
+              <li class="w3-padding-16">Photography</li>
+              <li class="w3-padding-16">5GB Storage</li>
+              <li class="w3-padding-16">Mail Support</li>
+              <li class="w3-padding-16">
+                <h2>$ 10</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+              <li class="w3-padding-16">Web Design</li>
+              <li class="w3-padding-16">Photography</li>
+              <li class="w3-padding-16">50GB Storage</li>
+              <li class="w3-padding-16">Endless Support</li>
+              <li class="w3-padding-16">
+                <h2>$ 25</h2>
+                <span class="w3-opacity">per month</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button
+                  class="w3-button w3-white w3-padding-large w3-hover-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+          !-- End pricing tables --
+        </div>
+
+        !-- Testimonials --
+        <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+        <img
+          src="/w3images/bandmember.jpg"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty
+          Schools.
+        </p>
+        <p>John Doe saved us from a web disaster.</p>
+        <br />
+
+        <img
+          src="/w3images/avatar_g2.jpg"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at
+          Company.
+        </p>
+        <p>No one is better than John Doe.</p>
+        !-- End About Section --
+      </div>
+      !-- Portfolio Section --
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">My Photos</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        !-- Photo gallery --
+        !-- Grid for photos --
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img src="/w3images/wedding.jpg" style="width: 100%" />
+            <img src="/w3images/rocks.jpg" style="width: 100%" />
+            <img src="/w3images/sailboat.jpg" style="width: 100%" />
+          </div>
+
+          <div class="w3-half">
+            <img src="/w3images/underwater.jpg" style="width: 100%" />
+            <img src="/w3images/chef.jpg" style="width: 100%" />
+            <img src="/w3images/wedding.jpg" style="width: 100%" />
+            <img src="/w3images/p6.jpg" style="width: 100%" />
+          </div>
+          !-- End photo grid --
+        </div>
+        !-- End Portfolio Section --
+      </div>
+    -->
+    <!-- Toolkit Section -->
+<div class="w3-padding-48 w3-content" id="toolkit">
+  <h2 class="w3-text-light-grey">Toolkit</h2>
+  
+
+  <div class="w3-flex" style="flex-wrap: wrap; gap: 8px">
+    <img class="w3-round-xlarge" alt="Jira" src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
+    <img class="w3-round-xlarge" alt="Zephyr Scale" src="https://img.shields.io/badge/Zephyr_Scale-6B7280?style=for-the-badge" />
+    <img class="w3-round-xlarge" alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+    <img class="w3-round-xlarge" alt="Swagger" src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
+    <img class="w3-round-xlarge" alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img class="w3-round-xlarge" alt="Adminer" src="https://img.shields.io/badge/Adminer-34567C?style=for-the-badge" />
+    <img class="w3-round-xlarge" alt="Slack" src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" />
+    <img class="w3-round-xlarge" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  </div>
+</div>
+<!-- End Toolkit Section -->
+
+<!-- Experience Section -->
+<div class="w3-padding-64 w3-content" id="experience">
+  <h2 class="w3-text-light-grey">QA Experience</h2>
+  <hr style="width: 200px" class="w3-opacity" />
+
+  <div class="w3-margin-bottom">
+    <h4 class="w3-text-light-grey w3-margin-bottom-0">FoxYou</h4>
+    <p class="w3-small w3-wide">QA ENGINEER · 2026 – PRESENT</p>
+    <p class="w3-medium">
+      Working on the QA of a language learning platform, mapping the site
+      structure, user flows and use cases to define test coverage, and
+      creating test cases and reporting bugs in close collaboration with the
+      team.
+    </p>
+  </div>
+
+  <div class="w3-margin-bottom">
+    <h4 class="w3-text-light-grey w3-margin-bottom-0">Delek Homes</h4>
+    <p class="w3-small w3-wide">MANUAL QA · 2026 · 6 MONTHS</p>
+    <p class="w3-medium">
+      Manual QA on a real estate web platform in a weekly Agile/Scrum release
+      cycle. Took part in sprint planning and effort estimation, analyzed
+      requirements, tested new tickets, and wrote and maintained test cases.
+      Reported bugs and verified fixes, ran full regression before each
+      release and smoke tests after it, and produced periodic test reports.
+    </p>
+  </div>
+</div>
+<!-- End Experience Section -->
+
+      <!-- Contact Section -->
+      <div class="w3-padding-48 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="fa fa-map-marker fa-fw w3-text-white w3-xlarge w3-margin-right"
+            ></i>
+            Porto Alegre, BRA
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xlarge w3-margin-right"
+            ></i>
+            Phone: +55 51997521404
+          </p>
+          <p>
+            <i
+              class="fa fa-envelope fa-fw w3-text-white w3-xlarge w3-margin-right"
+            >
+            </i>
+            Email: felipesviaro@mail.com
+          </p>
+          <p>
+  <i
+    class="fa fa-linkedin fa-fw w3-text-white w3-xlarge w3-margin-right"
+  ></i>
+  <a
+    href="https://www.linkedin.com/in/felipe-schneider-viaro-244767188/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="w3-hover-text-white"
+    >LinkedIn: linkedin.com/in/felipe-schneider-viaro-244767188/</a
+  >
+</p>
+        </div>
+        <br />
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="email"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large w3-round-xxlarge"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+       <!--
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            target="_blank"
+            class="w3-hover-text-green"
+            >w3.css</a
+          >
+        </p>
+        !-- End footer --
+      </footer>
+    -->
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>
